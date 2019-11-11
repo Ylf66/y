@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			.box{
+				width: 100px;
+				height: 100px;
+				background: red;
+				position: absolute;
+				top: 0px;
+				left: 0px;
+				transition-property: all;
+				transition-duration: 3s;
+				transition-timing-function: linear;
+				transition-delay: 5s;
+				transition:all 3s linear 1s;
+			}
+			.box:hover{
+				width: 200px;
+				height: 200px;
+				background: blue;
+				top: 50px;
+				left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

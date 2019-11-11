@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*1.类型选择符*/
+			/*p:选择符*/
+			/*color:属性
+			red:属性值*/
+			p{
+				color: red;
+			}
+			/*2.类选择符*/
+			.h{
+				color: blue;
+			}
+			.hh{
+				background-color: pink;
+			}
+			
+			/*3.id选择器，id具有唯一性，不可出现重复的id名，且一个标签里只能由一个id名*/
+			#a1{
+				color: red;
+			}
+			
+			#a3{
+				background-color: blue;
+			}
+			
+			/*4.通配符，指所有标签的意思*/
+			*{
+				font-size: 30px;
+			}
+			
+			/*.span1{
+				color: red;
+			}
+			.span2{
+				color: red;
+			}
+			.span3{
+				color: red;
+			}*/
+			
+			/*5.群组选择符*/
+			.span1,.span2,.span3{
+				color: red;
+			}
+			
+			.span4{
+				color: greenyellow;
+			}
+			
+			/*6.后代选择器*/
+			/*box下所有的span*/
+			.box span{
+				color: red;
+			}
+			
+			/*7.子选择器*/
+			/*box下子元素为span的标签*/
+			.box>span{
+				background-color: pink;
+			}
+			
+			.list li{
+				color: red;
+			}
+			/*.list .l4{
+				color: blue;
+			}*/
+			/*8.nth-child*/
+			.list li:nth-child(-n+3){
+				color: blue;
+			}
+			
+			/*9.hover鼠标移动到标签上的状态*/
+			.list li:hover{
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+		<p>看来封建帝国考虑到房价过快浪费大家赶快</p>
+		-->
+		<p title="这是一个p标签">看来封建帝国考虑到房价过快浪费大家赶快</p>
+		<p>看来封建帝国考虑到房价过快浪费大家赶快</p>
+		<p>看来封建帝国考虑到房价过快浪费大家赶快</p>
+		<p>看来封建帝国考虑到房价过快浪费大家赶快</p>
+		<h1>开发阶段看来是飞机离开</h1>
+		<h1 class="h hh">开发阶段看来是飞机离开</h1>
+		<h2 class="h hh">就肯定是防控技术的开发很少看见</h2>
+		<h1>开发阶段看来是飞机离开</h1>
+		<a id="a1 a3" href="#">百度</a>
+		<a id="a2" href="#">百度</a>
+		<span class="span1">就发你带回家开发</span>
+		<span class="span2">就发你带回家开发</span>
+		<span class="span3">就发你带回家开发</span>
+		<span class="span4">就发你带回家开发</span>
+		<div class="box">
+			<h1>
+				<span>张三</span>
+			</h1>
+			<span>李四</span>
+		</div>
+		<ul class="list">
+			<li>列表内容</li>
+			<li class="l4">列表内容</li>
+			<li>列表内容</li>
+			<li class="l4">列表内容</li>
+			<li>列表内容</li>
+			<li class="l4">列表内容</li>
+			<li>列表内容</li>
+		</ul>
+		<ul>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+			<li>列表内容</li>
+		</ul>
+	</body>
+</html>

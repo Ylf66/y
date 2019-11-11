@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height: 5000px;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				background: blue;
+				text-align: center;
+				line-height: 100px;
+				color: white;
+			}
+			.box2{
+				width: 100px;
+				height: 100px;
+				background: brown;
+				text-align: center;
+				line-height: 100px;
+				color: white;
+				position: relative;/*相对定位,参照物使它本身，元素不会脱离文档流*/
+				top: -30px;
+				left: 60px;
+				z-index: -5;
+			}
+			.box3{
+				width: 100px;
+				height: 100px;
+				background: black;
+				text-align: center;
+				line-height: 100px;
+				color: white;
+				position: absolute;/*绝对定位，参照物是具有定位属性的上级元素，元素会脱离文档流*/
+				top: 120px;
+				left: 60px;
+				z-index: 10;
+			}
+			.box4{
+				width: 100px;
+				height: 100px;
+				background: darkolivegreen;
+				text-align: center;
+				line-height: 100px;
+				color: white;
+				position: fixed;/*固定定位,参照物是浏览器，元素会脱离文档流*/
+				top: 50px;
+				left: 120px;
+				z-index: 0;
+			}
+			.box5{
+				width: 50px;
+				height: 50px;
+				background: red;
+				margin: 100px auto;
+				display: none;
+			}
+			.box4:hover .box5{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box1">1</div>
+		<div class="box2">2</div>
+		<div>
+			<div class="box3">3</div>
+		</div>
+		<div class="box4">
+			<div class="box5"></div>
+		</div>
+	</body>
+</html>

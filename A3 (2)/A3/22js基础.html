@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			body{
+				height: 5000px;
+			}
+			.box1{
+				width: 100px;
+				height: 100px;
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				background: red;
+				display: none;
+			}
+		</style>
+	</head>
+	<body>
+			<div class="box1">返回顶部</div>
+			<button id="btn">按钮</button>
+			<p class="p1">据法国航空积分兑换高科技复旦皇冠</p>
+			<p class="p1">据法国航空积分兑换高科技复旦皇冠</p>
+			<p class="p1">据法国航空积分兑换高科技复旦皇冠</p>
+			<p class="p1">据法国航空积分兑换高科技复旦皇冠</p>
+			<p class="p1">据法国航空积分兑换高科技复旦皇冠</p>
+	</body>
+	<!--引入外部文件-->
+	<script src="js/22.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript">
+		//写js代码
+		//弹窗
+		//alert("弹窗");
+		
+		//控制台输出
+		//console.log("控制台输出");
+		
+		//打印到页面上
+		//document.write("打印到页面上");
+		
+		//定义变量   var：关键字，box：变量名，
+		var box = 10;
+		var str = "hello word";
+		console.log(box);
+		console.log(str);
+		
+		//创建函数
+		function fn(){
+			console.log("a");
+		}	
+		
+		//调用函数
+		fn();
+		
+		//运算符
+		//算术运算符（+，-, *, /, %(取余数)）
+		var a = 10 ;
+		var b = 20 ;
+		console.log(a%b);
+		
+		//关系运算符 <、>、<=、>=、==、
+		console.log(a==b);
+		
+		//赋值运算符     =、+=、-=、*=、/=、
+		var c = 30;
+		c/=5;
+		//(c=c+5)
+		console.log(c);
+		
+//		自增、自减
+//		++a, a++
+//		--a, a--
+		var d = 10;
+		d++;
+		console.log(d);
+
+		//如: 判断一个数是偶数还是奇数
+		var a = 9 ;
+		if(a%2==0){
+			console.log(a+"是偶数");
+		}else{
+			console.log(a+"是奇数");
+		}
+		
+		//求两个数的最大数；
+		var a1 = 15;
+		var a2 = 20;
+		if(a1>a2){
+			console.log(a1+"是最大数");
+		}else{
+			console.log(a2+"是最大数");
+		}
+		
+		//计算1+2+3+……+100之和。
+		var s = 0;
+		for(var i = 0 ;i<=100;i++){
+			s+=i;
+		}
+		console.log(s);
+		
+		//<button id="btn">按钮</button>
+		//button 元素节点
+		//id="btn" 属性节点
+		//按钮 文本节点
+		
+		//1.获取元素节点
+		var btn = document.querySelector("#btn");
+		console.log(btn);
+		var p1 = document.querySelector(".p1");
+		
+		//返回数组
+		var op = document.querySelectorAll(".p1");
+		console.log(op);
+		
+		op[2].style.color = "blue";
+		
+		//修改样式
+		p1.style.color = 'red';
+		p1.style.background = "pink";
+		p1.style.fontSize = "30px";
+		
+		for(var i=0;i<op.length;i++){
+				op[i].style.background = "white";
+			}
+		
+		//点击事件
+		var k = 0 ;
+		btn.onclick = function(){
+			k++;
+			if(k%2==0){
+				for(var i=0;i<op.length;i++){
+					op[i].style.background = "pink";
+				}
+			}else{
+				for(var i=0;i<op.length;i++){
+					op[i].style.background = "white";
+				}
+			}
+			
+		}
+		//开启定时器
+//		var timer = setInterval(function(){
+//			console.log("a");
+//		},1000)
+//		setInterval(fn1,1000);
+//		function fn1(){
+//			console.log("b");
+//		}
+		//关闭定时器
+	//	clearInterval(timer);
+	</script>
+
+</html>

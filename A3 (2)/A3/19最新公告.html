@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			#box{
+				overflow: hidden;
+				height: 50px;
+				line-height: 50px;
+				background: peru;
+			}
+			h3{
+				float: left;
+				margin-left: 100px;
+			}
+			.box2{
+				float: left;
+				position: relative;
+				top: 0px;
+				animation: mybox2 10s infinite;
+			}
+			@keyframes mybox2{
+				0%{top: 0px;}
+				16.6%{top: -50px;}
+				33%{top: -50px;}
+				49%{top: -100px;}
+				67%{top: -100px;}
+				83%{top: -150px;}
+				100%{top: -150px;}
+			}
+		</style>
+	</head>
+	<body>
+		<div id="box">
+			<h3>最新公告：</h3>
+			<div class="box2">
+				<p>中国成为纽约市第二大境外旅游客源国</p>
+				<p>元旦小长假盘点：三亚 境外游客增长迅速 全域旅游促游客满意度提升</p>
+				<p>旅游经营服务七类行为 或将列入“严重失信”</p>
+				<p>中国成为纽约市第二大境外旅游客源国</p>
+			</div>
+		</div>
+	</body>
+</html>
